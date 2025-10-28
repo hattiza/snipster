@@ -1,0 +1,3 @@
+[submodule "snipster_notes"]
+	path = snipster_notes
+	url = git@github.com:hattiza/snipster_notes.git

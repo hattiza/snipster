@@ -1,0 +1,17 @@
+[project]
+name = "snipster"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hattiza", email = "quiet.iron8712@fastmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+snipster = "snipster:main"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"

@@ -7,7 +7,9 @@ authors = [
     { name = "hattiza", email = "quiet.iron8712@fastmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "sqlmodel>=0.0.27",
+]
 
 [project.scripts]
 snipster = "snipster:main"

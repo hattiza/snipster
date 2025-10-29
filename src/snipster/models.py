@@ -1,6 +1,12 @@
+import os
+
+from dotenv import load_dotenv
 from sqlmodel import Field, SQLModel, create_engine
 
-engine = create_engine("sqlite:///db.sqlite", echo=False)
+load_dotenv()
+PROD_DB = os.environ["PROD_DB"]
+
+engine = create_engine(PROD_DB, echo=False)
 
 
 class Item(SQLModel, table=True):
